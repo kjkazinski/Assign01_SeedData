@@ -64,8 +64,7 @@ namespace Assign01_SeedData
                     Console.WriteLine ("\tProcessing Event {0} Date: {1:R} Location {2} - {3}", lcv, LocationEventDateTime, Locations[Index].LocationId, Locations[Index].Name );
 
                     Event NewEvent = new Event{TimeStamp = LocationEventDateTime,
-                                               LocationId = Locations[Index].LocationId,
-                                               Location = Locations[Index]};
+                                               LocationId = Locations[Index].LocationId};
 
                     db.AddEvent(NewEvent);
                 }
